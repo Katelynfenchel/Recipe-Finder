@@ -1,7 +1,9 @@
 class IngredientController < ApplicationController
 
 	get '/'do
-	
+
+	@ingredients = Ingredient.all
+	@ingredients.to_json
 
 	end
 

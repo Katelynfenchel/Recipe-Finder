@@ -1,7 +1,6 @@
 {
   "name": "project3",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -11,5 +10,18 @@
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-less": "^3.3.0"
-  }
+  },
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-less": "^3.3.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Katelynfenchel/Recipe-Finder.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Katelynfenchel/Recipe-Finder/issues"
+  },
+  "homepage": "https://github.com/Katelynfenchel/Recipe-Finder#readme",
+  "description": ""
 }

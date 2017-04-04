@@ -15,7 +15,7 @@ INSERT INTO recipes (meal, name, image_url, description) VALUES ('Dinner','Simpl
 
 INSERT INTO recipes (meal, name, image_url, description) VALUES ('Side','Roasted Carrots with Honey','http://cookieandkate.com/images/2016/03/roasted-carrots-with-honey-butter-recipe.jpg','Simple roasted carrots tossed in a light honey butter sauce makes an incredible side dish!');
 
-INSERT INTO recipes (meal, name, image_url, description) VALUES ('Side', 'http://cookieandkate.com/images/2016/10/pesto-pasta-salad.jpg', 'This pesto pasta salad recipe is bursting with fresh flavor.');
+INSERT INTO recipes (meal, name, image_url, description) VALUES ('Side', 'Pesto Pasta Salad','http://cookieandkate.com/images/2016/10/pesto-pasta-salad.jpg', 'This pesto pasta salad recipe is bursting with fresh flavor.');
 
 INSERT INTO recipes (meal, name, image_url, description) VALUES ('Side','Roasted Cauliflower', 'http://cookieandkate.com/images/2016/10/roasted-cauliflower-with-parmesan-parsley.jpg', 'So easy to make and oh so yummy!');
 

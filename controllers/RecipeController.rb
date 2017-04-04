@@ -3,10 +3,10 @@ class RecipeController < ApplicationController
 
 #get route to breakfast
 get '/breakfast'do
-
+#getting all the recipes with the column breakfast
 	@recipes = Recipe.where(meal: 'Breakfast')
 	
-
+binding.pry
 	puts @recipes
 	erb :breakfast
 
@@ -21,18 +21,21 @@ end
 
 
 get '/dinner'do
+	@recipes = Recipe.where(meal: 'Dinner')
 
 	erb :dinner
 
 end
 
 get '/dessert'do
+	@recipes = Recipe.where(meal: 'Dessert')
 
 	erb :dessert
 
 end
 
 get '/sides'do
+	@recipes = Recipe.where(meal: 'Side')
 
 	erb :sides
 

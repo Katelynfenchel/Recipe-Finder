@@ -11,4 +11,4 @@ CREATE TABLE recipes(id SERIAL PRIMARY KEY, meal varchar(255), name varchar(255)
 
 CREATE TABLE ingredients(id SERIAL PRIMARY KEY, name varchar(255));
 
-CREATE TABLE ingredients_recipes(id SERIAL PRIMARY KEY, recipes_id INT references recipes(id), ingredients_id INT references ingredients(id));
+CREATE TABLE ingredients_recipes(id SERIAL PRIMARY KEY, recipe_id INT references recipes(id), ingredient_id INT references ingredients(id));

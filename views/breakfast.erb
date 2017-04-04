@@ -4,30 +4,67 @@
 	<title>Breakfast Recipes</title>
 </head>
 <body>
+	<h1>Breakfast Recipes</h1>
 
 	<div class="container">
+	 <div class="row">
+	
+	   	<% @recipes.each do |recipe| %> 	
 
-  <!-- columns should be the immediate child of a .row -->
-	  <div class="row">
-	    <div class="four columns" style="font-size: 20px">Broccoli Cheddar and Spinash Frittata </div>
-	    <img class ="resize" src="http://cookieandkate.com/images/2017/02/broccoli-cheddar-frittata.jpg">
-		     <p> This spinach, broccoli and cheddar frittata recipe is a simple breakfast, brunch or dinner! It's vegetarian and gluten free.</p>
-			 <p> Ingredients </p>
-		     <p> Instructions </p>
-	    
+	     <div class="four columns" style="font-size: 20px">
+		     <h3><%= recipe.name %> </h3>
+		     <h4><%= recipe.meal %>	</h4>
+			 <img class ="resize" src= '<%= recipe.image_url%>'/>
+		   	 <p> <%= recipe.description %> </p>
+		   	 <h4>Ingredients</h4>
+		   	 <ul> 
+		    	<li>1 large head of cauliflower</li>
+		    	<li>2 to 3 tablespoons extra-virgin olive oil, as needed</li>
+		    	<li>Salt, to taste</li>
+		    	<li>Freshly ground black pepper, to taste</li>
+		    </ul>
+		    
+		    <h4>Instructions</h4>
+		    <ul> 
+		    	<li>Preheat Oven to 425 degrees</li>
+		    	<li>Prep the cauliflower</li>
+		    	<li>Place cauliflower on baking sheet with olive oil</li>
+		    	<li>bake for 30 minutes or til golden brown</li>
+		    </ul>
+		  </div>
 
-	    <div class="four columns" style="font-size: 20px">Tex-Mex Breakfast Bowl  </div>
-	    <img class ="resize" src="http://cookieandkate.com/images/2016/06/breakfast-bowl-with-eggs-black-beans-pico.jpg">
-		    <p> Hearty breakfast bowls featuring your favorite Tex-Mex flavors, including fresh pico de gallo, black beans and avocado.</p>
-		    <p> Ingredients </p>
-		    <p> Instructions </p>
+		  <% end %> 
+	
+
+			<!-- <ul> Ingredients
+		    	<li>1 large head of cauliflower</li>
+		    	<li>2 to 3 tablespoons extra-virgin olive oil, as needed</li>
+		    	<li>Salt, to taste</li>
+		    	<li>Freshly ground black pepper, to taste</li></ul>
+		    
+		    <ul> Instructions 
+		    	<li>Preheat Oven to 425 degrees</li>
+		    	<li>Prep the cauliflower</li>
+		    	<li>Place cauliflower on baking sheet with olive oil</li>
+		    	<li>bake for 30 minutes or til golden brown</li></ul>
+
+	     -->
 	   
-
-	    <div class="four columns" style="font-size: 20px">Triple Coconut Granola </div>
+<!-- 
+	    <div class="four columns" style="font-size: 20px"> </div>
 	    <img class ="resize" src="http://laurencariscooks.com/1_lcc/wp-content/uploads/2017/02/Cacao-Crunch-Granola-1-2-600x600.jpg">
 		    <p>This easy homemade coconut granola recipe features coconut flakes, shredded coconut and coconut oil! It's naturally sweetened with maple syrup.</p>
-		    <p> Ingredients </p>
-		    <p> Instructions </p>
+		    <ul> Ingredients 
+		    	<li>1 large head of cauliflower</li>
+		    	<li>2 to 3 tablespoons extra-virgin olive oil, as needed</li>
+		    	<li>Salt, to taste</li>
+		    	<li>Freshly ground black pepper, to taste</li></ul>
+		    
+		    <ul> Instructions 
+		    	<li>Preheat Oven to 425 degrees</li>
+		    	<li>Prep the cauliflower</li>
+		    	<li>Place cauliflower on baking sheet with olive oil</li>
+		    	<li>bake for 30 minutes or til golden brown</li></ul> -->
 	    
 	  </div>
 	</div>

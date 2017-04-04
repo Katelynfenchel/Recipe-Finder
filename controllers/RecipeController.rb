@@ -1,9 +1,33 @@
 class RecipeController < ApplicationController
 
-get '/'do
-	erb :recipe
+
+
+get '/breakfast'do
+
+	erb :breakfast
 
 end
+
+get '/dinner'do
+
+	erb :dinner
+
+end
+
+get '/dessert'do
+
+	erb :dessert
+
+end
+
+get '/sides'do
+
+	erb :sides
+
+end
+
+
+
 
 post '/'do
 	puts params

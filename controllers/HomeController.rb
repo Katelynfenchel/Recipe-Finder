@@ -24,6 +24,13 @@ class HomeController < ApplicationController
 		erb :register
 	end
 
+	get '/logout'do
+
+	 session.destroy
+	 redirect '/home/login'
+
+	end
+
 post '/login'do
 
 	username = params[:username]

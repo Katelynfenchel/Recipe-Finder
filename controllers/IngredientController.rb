@@ -1,6 +1,6 @@
 class IngredientController < ApplicationController
 
-	get '/'do
+	get '/breakfast'do
 
 	@ingredients = Ingredient.all
 	@ingredients.to_json
@@ -8,13 +8,13 @@ class IngredientController < ApplicationController
 	end
 
 	post '/'do
-		puts params
+		# puts params
 		
-		@ingredients = Ingredient.new
-		@ingredients.name = params[:name]
+		# @ingredients = Ingredient.new
+		# @ingredients.name = params[:name]
 
-		@ingredients.save
-		@ingredients.to_json
+		# @ingredients.save
+		# @ingredients.to_json
 
 
 

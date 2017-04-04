@@ -6,7 +6,8 @@ get '/breakfast'do
 #getting all the recipes with the column breakfast
 	@recipes = Recipe.where(meal: 'Breakfast')
 	
-binding.pry
+	
+# binding.pry
 	puts @recipes
 	erb :breakfast
 

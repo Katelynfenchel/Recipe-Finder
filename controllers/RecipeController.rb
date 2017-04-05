@@ -5,7 +5,7 @@ class RecipeController < ApplicationController
 get '/breakfast'do
 #getting all the recipes with the column breakfast
 	@recipes = Recipe.where(meal: 'Breakfast')
-	
+
 	
 # binding.pry
 	puts @recipes

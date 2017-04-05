@@ -2,10 +2,11 @@ class HomeController < ApplicationController
 	
 
 	get '/' do
-
+#if logged in go to the home page and display all the recipes
 		if session[:logged_in]
 			@username = session[:username]
-		
+			@recipes = Recipe.all
+			puts @recipes
 			erb :home
 		else
 			@message = "You are not logged in!"
@@ -13,6 +14,7 @@ class HomeController < ApplicationController
 		end
 
 	end
+
 
 	get '/login'do
 		
@@ -52,6 +54,16 @@ post '/login'do
 		@message = "Login unsuccessful"
 		erb :login
 	end
+end
+
+post '/'do
+	puts params
+
+	@recipe = Recipe.all
+
+
+
+
 end
 
 post '/register'do

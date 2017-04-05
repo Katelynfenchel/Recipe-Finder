@@ -13,27 +13,16 @@
 
 	     <div class="four columns" style="font-size: 20px">
 		     <h3><%= recipe.name %> </h3>
-		     <h4><%= recipe.meal %>	</h4>
 			 <img class ="resize" src= '<%= recipe.image_url%>'/>
 		   	 <p> <%= recipe.description %> </p>
 		   	  <h4>Ingredients:</h4>
 		   	 <h4><% recipe.ingredients.each do |ingredient|%> 
 		   	 <p> <%= ingredient.name %> </p>
 		   	  <%end%></h4>
-		   	 <!-- <ul> 
-		    	<li>1 large head of cauliflower</li>
-		    	<li>2 to 3 tablespoons extra-virgin olive oil, as needed</li>
-		    	<li>Salt, to taste</li>
-		    	<li>Freshly ground black pepper, to taste</li>
-		    </ul> -->
+
 		    
 		    <h4>Instructions</h4>
-		    <ul> 
-		    	<li>Preheat Oven to 425 degrees</li>
-		    	<li>Prep the cauliflower</li>
-		    	<li>Place cauliflower on baking sheet with olive oil</li>
-		    	<li>bake for 30 minutes or til golden brown</li>
-		    </ul>
+		    <p> <%= recipe.instructions %> </p>
 		  </div>
 
 		  <% end %> 

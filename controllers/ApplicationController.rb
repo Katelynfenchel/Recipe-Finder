@@ -9,7 +9,7 @@ class ApplicationController < Sinatra::Base
 #this query the database
 	ActiveRecord::Base.establish_connection(
 		:adapter => db.scheme == 'postgres' ? 'postgresql' : db.scheme,
-		:database => 'd2glpum13qde93' || 'vegetarian_meals'
+		:database => db.path[1..-1]
 
 	)
 

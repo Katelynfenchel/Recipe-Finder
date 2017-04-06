@@ -8,13 +8,6 @@ class IngredientController < ApplicationController
 	end
 
 	post '/'do
-		# puts params
-		
-		# @ingredients = Ingredient.new
-		# @ingredients.name = params[:name]
-
-		# @ingredients.save
-		# @ingredients.to_json
 
 
 

@@ -1,4 +1,4 @@
-class RecipeController < ApplicationController
+	class RecipeController < ApplicationController
 
 
 #get route to breakfast
@@ -8,6 +8,7 @@ get '/breakfast'do
 
 	
 # binding.pry
+#pring out all the recipes onto the recipes/breakfast page
 	puts @recipes
 	erb :breakfast
 
@@ -44,7 +45,7 @@ end
 
 
 
-
+#if you wanted to create your own recipe, this is how it would be done
 post '/'do
 	puts params
 	#all the properties from the table

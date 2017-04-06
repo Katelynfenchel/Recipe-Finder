@@ -1,21 +1,34 @@
 <!DOCTYPE html>
 <html>
 <head>
+ <div class="nav" id="myNav">
+              <a href="http://localhost:9292/recipes/breakfast">Breakfast</a>
+              <a href="http://localhost:9292/recipes/dinner">Dinner</a>
+              <a href="http://localhost:9292/recipes/sides">Sides</a>
+              <a href="http://localhost:9292/recipes/dessert">Desserts</a>
+              
+            </div>
+            <br>
 	<title>Breakfast Recipes</title>
 </head>
 <body>
-	<h1>Breakfast Recipes</h1>
-
-	<div class="container">
-	 <div class="row">
 	
+<h1>Breakfast Recipes</h1>
+	
+	
+	<div class="container">
+	<div class="row">
+	 
+	<!-- create a for loop in order to get all the recipes related to breakfast -->
 	   	<% @recipes.each do |recipe| %> 	
 
 	     <div class="four columns" style="font-size: 20px">
+	     <!-- get the information from the sql db to print on the breakfast page -->
 		     <h3><%= recipe.name %> </h3>
 			 <img class ="resize" src= '<%= recipe.image_url%>'/>
 		   	 <p> <%= recipe.description %> </p>
 		   	  <ul>Ingredients:</ul>
+		   	 <!--  create another for loop to loop through all the ingredients and then print on page -->
 		   	 <h4 class="ingredients"><% recipe.ingredients.each do |ingredient|%> 
 		   	 <li> <%= ingredient.name %> </li>
 		   	  <%end%></h4>

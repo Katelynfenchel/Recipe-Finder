@@ -10,7 +10,7 @@ class ApplicationController < Sinatra::Base
 	ActiveRecord::Base.establish_connection(
 		#type of sql
 		:adapter => db,
-		:database => 'd2glpum13qde93' || 'vegetarian_meals'
+		:database => db.path[1..-1]
 
 	)
 

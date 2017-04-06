@@ -10,12 +10,17 @@ body {
 }
 h1 {
   font-family: 'Playfair Display', serif;
-  border-bottom-color: black;
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
   text-align: left;
   font-size: 45px;
   font-weight: inherit;
+}
+.nav.six.columns {
+  margin-top: 61px;
+}
+#bar {
+  border-bottom-color: black;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
 }
 h3 {
   font-family: 'Playfair Display', serif;
@@ -38,6 +43,7 @@ ul {
 }
 li {
   font-weight: inherit;
+  list-style: none;
 }
 div.column.twelve {
   border-bottom-color: black;
@@ -90,7 +96,7 @@ a {
   color: white;
 }
 .resize {
-  width: 145px;
+  width: 135px;
   height: auto;
 }
 .ingredients {

@@ -8,7 +8,7 @@ class ApplicationController < Sinatra::Base
 	ActiveRecord::Base.establish_connection(
 		#type of sql
 		:adapter => 'postgresql',
-		:database => 'vegetarian_meals'
+		:database => 'd2glpum13qde93' || 'vegetarian_meals'
 	)
 
 	set :public_dir, File.expand_path('../../public', __FILE__)

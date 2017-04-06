@@ -37,8 +37,7 @@ p {
   font-family: 'Playfair Display', serif;
 }
 ul {
-  text-decoration: underline;
-  font-family: 'Playfair Display', serif;
+  text-decoration: 'Playfair Display', serif;
   font-weight: bold;
 }
 li {
@@ -54,7 +53,7 @@ div.column.twelve {
 }
 div.columns.four {
   font-family: 'Playfair Display', serif;
-  border-bottom-color: slategrey;
+  border-bottom-color: black;
   border-bottom-style: solid;
   border-bottom-width: 2px;
 }
@@ -104,7 +103,7 @@ a {
 }
 .row {
   text-align: center;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Playfair Display', serif;
   font-size: 30px;
 }
 .row2 {

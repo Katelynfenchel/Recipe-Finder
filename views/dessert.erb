@@ -24,27 +24,27 @@
 
 
 	<div class="container">
-	 <div class="row">
+		<div class="row">
 	<!-- create a for loop to loop through all the recipes -->
 	   	<% @recipes.each do |recipe| %> 	
 
-	     <div class="four columns"  style="font-size: 20px"> 
-		     <h3><%= recipe.name %> </h3>
-			 <img class ="resize" src= '<%= recipe.image_url%>'/>
-		   	 <p> <%= recipe.description %> </p>
-		   	 <ul>Ingredients:</ul>
-		   	 <!-- loop through all the ingredients -->
-		   	 <h4 class="ingredients"><% recipe.ingredients.each do |ingredient|%> 
-		   	 <li> <%= ingredient.name %> </li>
-		   	  <%end%></h4>
-		 	
-		 	<h4>Instructions</h4>
-		    <p> <%= recipe.instructions %> </p>
-		  </div>
+		    <div class="four columns"  style="font-size: 20px"> 
+			     <h3><%= recipe.name %> </h3>
+				 <img class ="resize" src= '<%= recipe.image_url%>'/>
+			   	 <p> <%= recipe.description %> </p>
+			   	 <ul>Ingredients:</ul>
+			   	 <!-- loop through all the ingredients -->
+			   	 <h4 class="ingredients"><% recipe.ingredients.each do |ingredient|%> 
+			   	 <li> <%= ingredient.name %> </li>
+			   	  <%end%></h4>
+			 	
+			 	<h4>Instructions</h4>
+			    <p> <%= recipe.instructions %> </p>
+			</div>
 
 		  <% end %> 
 	
-	  </div>
+		</div>
 	</div>
 
 </body>

@@ -4,13 +4,13 @@ Technologies used:
 	html
 	css
 	skeleton
-	ruby
+	ruby/sinatra
 	active record
-	gulp
+	gulp/less
 	sql
 
 Approach taken:
 	Created several erb files to import the information from the database onto the corresponding pages. The website is very user friendly.
 
 Problems:
-	Add issues with the looping and getting information on the page, however, solved.  Trying to make the page responsive. 
+	Add issues with the looping and getting information on the page, however, solved.  

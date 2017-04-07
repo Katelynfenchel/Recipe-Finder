@@ -13,4 +13,4 @@ Approach taken:
 	Created several erb files to import the information from the database onto the corresponding pages. The website is very user friendly.
 
 Problems:
-	Add issues with the looping and getting information on the page, however, solved.  
+	Realizing that I needed to put a for loop inside a for loop so that I was able to get in correct ingredients to the corresponding recipe from the database. 

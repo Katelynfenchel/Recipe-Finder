@@ -80,9 +80,6 @@ div#myNav.nav {
 a {
   color: black;
 }
-.topnav {
-  background: rgba(255, 255, 255, 0.5);
-}
 .topnav a {
   float: center;
   display: block;
@@ -92,6 +89,7 @@ a {
   text-decoration: none;
   font-size: 35px;
   font-family: 'Playfair Display', serif;
+  background: rgba(255, 255, 255, 0.5);
 }
 .topnav a.active {
   background-color: #4CAF50;

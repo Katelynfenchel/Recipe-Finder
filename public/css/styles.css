@@ -81,8 +81,7 @@ a {
   color: black;
 }
 .topnav {
-  background-color: none;
-  overflow: hidden;
+  background: rgba(255, 255, 255, 0.5);
 }
 .topnav a {
   float: center;

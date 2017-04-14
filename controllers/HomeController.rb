@@ -3,14 +3,15 @@ class HomeController < ApplicationController
 
 	get '/' do
 #if logged in go to the home page and display all the recipes
+		p session
 		if session[:logged_in]
 			@username = session[:username]
 			@recipes = Recipe.all
-			puts @recipes
+		
 			erb :home
 		else
 			@message = "You are not logged in!"
-				erb :login
+				redirect '/home/login'
 		end
 
 	end
@@ -26,12 +27,11 @@ class HomeController < ApplicationController
 		erb :register
 	end
 
-	get '/logout'do
-
-	 session.destroy
-	 redirect '/home/login'
-
-	end
+	get '/logout' do
+		p session
+    	session[:user_id]= nil
+    	redirect '/home/login'
+  	end
 
 post '/login'do
 
@@ -44,7 +44,6 @@ post '/login'do
 		session[:logged_in] = true
 		session[:username] = username
 		session[:user_id] = user.id
-		puts "something different"
 		puts session[:user_id]
 		redirect '/home'
 
@@ -72,7 +71,7 @@ post '/register'do
 	user.password = params["password"]
 
 	user.save
-	redirect 'home'
+	redirect '/home/login'
 
 end
 

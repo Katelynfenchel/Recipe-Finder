@@ -72,7 +72,7 @@ post '/register'do
 	user.password = params["password"]
 
 	user.save
-	redirect '/home/login'
+	redirect 'home'
 
 end
 

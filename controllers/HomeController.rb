@@ -5,13 +5,15 @@ class HomeController < ApplicationController
 #if logged in go to the home page and display all the recipes
 		p session
 		if session[:logged_in]
+		p 'hi'
 			@username = session[:username]
 			@recipes = Recipe.all
 		
 			erb :home
 		else
+			p 'hello'
 			@message = "You are not logged in!"
-				redirect '/home/login'
+				redirect 'home/login'
 		end
 
 	end
@@ -41,6 +43,7 @@ post '/login'do
 
 	#compares the hash to determine login
 	if user && user.authenticate(password)
+		puts 'this is happening'
 		session[:logged_in] = true
 		session[:username] = username
 		session[:user_id] = user.id
@@ -50,6 +53,7 @@ post '/login'do
 
 
 	else
+		puts 'esle is happeing'
 		@message = "Login unsuccessful"
 		erb :login
 	end

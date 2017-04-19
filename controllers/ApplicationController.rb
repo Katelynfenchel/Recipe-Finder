@@ -21,12 +21,12 @@ db = URI.parse(ENV['DATABASE_URL'])
 
 set :public_dir, File.expand_path('../../public', __FILE__)
 set :views, File.expand_path('../../views', __FILE__)
-# set :session_secret, 'test'
+set :session_secret, 'test'
 
   
-    get '/' do
-      redirect 'home/login'
-    end
+    # get '/' do
+    #   redirect 'home/login'
+    # end
 
 
     not_found do

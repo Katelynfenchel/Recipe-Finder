@@ -33,7 +33,7 @@ set :session_secret, 'test'
       erb :not_found
     end
 
-
+end
 
 
 
@@ -53,5 +53,5 @@ set :session_secret, 'test'
 #   set :public_dir, File.expand_path('../../public', __FILE__)
 #   set :session_secret, 'test'
 
-end
+# end
 

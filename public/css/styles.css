@@ -6,16 +6,17 @@ body {
   background: white;
   background-repeat: no-repeat;
   background-size: cover;
-  font-family: 'Playfair Display', serif;
+  font-family: 'Raleway', sans-serif;
 }
 h1 {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Raleway', sans-serif;
   text-align: left;
   font-size: 35px;
   font-weight: inherit;
 }
 .nav.six.columns {
   margin-top: 61px;
+  color: white;
 }
 #bar {
   border-bottom-color: black;
@@ -24,26 +25,28 @@ h1 {
   position: relative;
 }
 h3 {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Raleway', sans-serif;
   font-size: 20px;
   text-decoration: underline;
 }
 h4 {
   font-size: 20px;
   text-decoration: underline;
-  font-family: 'Playfair Display', serif;
+  font-family: 'Raleway', sans-serif;
+  font-style: italic;
 }
 p {
   font-size: 15px;
-  font-family: 'Playfair Display', serif;
+  font-family: 'Raleway', sans-serif;
   padding-right: 15px;
   padding-left: 15px;
 }
 ul {
-  text-decoration: 'Playfair Display', serif;
+  text-decoration: 'Raleway', sans-serif;
   font-weight: bold;
   text-decoration: underline;
   padding-left: 0px;
+  font-style: italic;
 }
 li {
   font-weight: inherit;
@@ -54,10 +57,10 @@ div.column.twelve {
   border-bottom-style: solid;
   border-bottom-width: 1px;
   font-size: 50px;
-  font-family: 'Playfair Display', serif;
+  font-family: 'Raleway', sans-serif;
 }
 div.columns.four {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Raleway', sans-serif;
   border-bottom-color: black;
   border-bottom-style: solid;
   border-bottom-width: 2px;
@@ -76,11 +79,14 @@ div#myNav.nav {
   padding: 14px 16px;
   text-decoration: none;
   font-size: 15px;
-  font-family: 'Playfair Display', serif;
+  font-family: 'Raleway', sans-serif;
   font-weight: bold;
 }
 a {
-  color: black;
+  color: white;
+}
+a.button {
+  margin-top: 7px;
 }
 .topnav a {
   float: center;
@@ -90,7 +96,7 @@ a {
   padding: 14px 16px;
   text-decoration: none;
   font-size: 35px;
-  font-family: 'Playfair Display', serif;
+  font-family: 'Raleway', sans-serif;
   background: rgba(255, 255, 255, 0.5);
 }
 .topnav a.active {
@@ -106,7 +112,7 @@ a {
 }
 .row {
   text-align: center;
-  font-family: 'Playfair Display', serif;
+  font-family: 'Raleway', sans-serif;
   font-size: 30px;
   margin-top: 18px;
 }
@@ -120,6 +126,27 @@ a {
   border-bottom-color: black;
   border-bottom-style: solid;
   border-bottom-width: 2px;
+  background-image: url("../image/spinach.png");
+  background-repeat: none;
+}
+div#breakfastTop.containers {
+  background-image: url("../image/juice.png");
+  background-repeat: none;
+  background-size: cover;
+}
+div#dinnerTop.containers {
+  background-image: url("../image/kale.png");
+  height: 100%;
+  width: auto;
+  background-repeat: none;
+  background-size: cover;
+}
+div#dessertTop.containers {
+  background-image: url("../image/doughnuts.png");
+  height: 100%;
+  width: auto;
+  background-repeat: none;
+  background-size: cover;
 }
 a#logout {
   font-size: 15px;
@@ -130,10 +157,10 @@ div.logo {
   font-weight: bold;
   font-size: 15px;
   margin-top: 100px;
-  font-family: 'Playfair Display', serif;
+  font-family: 'Raleway', sans-serif;
   background: rgba(255, 255, 255, 0.5);
 }
 #insert {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Raleway', sans-serif;
   font-size: 15px;
 }

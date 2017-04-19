@@ -1,10 +1,7 @@
 @black: black;
 @white: white;
-@font: 'Playfair Display', serif;
+@font:'Raleway', sans-serif;;
 @underline: underline;
-
-
-
 
 
 
@@ -36,6 +33,7 @@ h1{
 }
 	.nav.six.columns{
 		margin-top: 61px;
+		color: white;
 	}
 
 #bar{
@@ -56,6 +54,7 @@ h4{
 	font-size: 20px;
 	text-decoration: @underline;
 	font-family: @font;
+	font-style: italic;
 	
 
 }
@@ -74,6 +73,7 @@ ul{
 	font-weight: bold;
 	text-decoration: @underline;
 	padding-left: 0px;
+	font-style: italic;
 }
 
 li{
@@ -118,7 +118,11 @@ div#myNav.nav {
     
 }
 a{
-	color: @black;
+	color: white;
+}
+
+a.button{
+	margin-top: 7px;
 }
 
 .topnav {
@@ -177,9 +181,39 @@ a{
 	border-bottom-color: @black;
     border-bottom-style: solid;
    	border-bottom-width: 2px;
+   	background-image: url("../image/spinach.png");
+   	background-repeat: none;
+  
 
 }
 
+div#breakfastTop.containers{
+	background-image: url("../image/juice.png");
+   	background-repeat: none;
+   	// height: 100%;
+   	// width: auto;
+   	background-repeat: none;
+   	background-size: cover;
+}
+
+div#dinnerTop.containers{
+	background-image: url("../image/kale.png");
+   	background-repeat: none;
+   	height: 100%;
+   	width: auto;
+   	background-repeat: none;
+   	background-size: cover;
+   	
+}
+div#dessertTop.containers{
+	background-image: url("../image/doughnuts.png");
+   	background-repeat: none;
+   	height: 100%;
+   	width: auto;
+   	background-repeat: none;
+   	background-size: cover;
+   	
+}
 
 
 a#logout{

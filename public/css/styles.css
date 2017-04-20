@@ -14,14 +14,14 @@ h1 {
   font-size: 35px;
   font-weight: inherit;
 }
+h1.title {
+  color: white;
+}
 .nav.six.columns {
   margin-top: 61px;
   color: white;
 }
 #bar {
-  border-bottom-color: black;
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
   position: relative;
 }
 h3 {
@@ -40,6 +40,7 @@ p {
   font-family: 'Raleway', sans-serif;
   padding-right: 15px;
   padding-left: 15px;
+  font-weight: bolder;
 }
 ul {
   text-decoration: 'Raleway', sans-serif;
@@ -84,9 +85,35 @@ div#myNav.nav {
 }
 a {
   color: white;
+  font-color: white;
+}
+button {
+  color: white;
+}
+.bottom-button {
+  display: inline-block;
+  height: 38px;
+  padding: 0 30px;
+  color: #555;
+  text-align: center;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 38px;
+  letter-spacing: .1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: transparent;
+  border-radius: 4px;
+  border: 1px solid #bbb;
+  cursor: pointer;
+  box-sizing: border-box;
+  margin-top: 7px;
 }
 a.button {
   margin-top: 7px;
+  color: white;
+  font-color: white;
 }
 .topnav a {
   float: center;

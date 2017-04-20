@@ -66,7 +66,7 @@ class HomeController < ApplicationController
 
 		post '/register'do
 			user = User.new
-			
+
 			user.username = params["username"]
 			user.password = params["password"]
 
